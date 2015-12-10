@@ -4,6 +4,7 @@
 //Bug 1: when we call the calculateSTI function, we want to call the 2nd dimension array[i] and not first dimension array
 //Bug 2: in the getBaseSTI function, we want to return just the basePercent, not the basePercent minus 1
 //Bug 3: if rating is 2, there should be no bonus regardless of years with company. Removed the bonus if rating=2 before setting the bonus amount to newArray[1]
+//Bug 4: rounded annual compensation
 //Hard: added spaces between information. new for loop before newText
 
 var arrayAtticus = ["Atticus", "2405", "47000", 3];
@@ -59,7 +60,7 @@ function calculateSTI(array1){
   } 
 
   newArray[1] = bonus;
-  newArray[2] = baseSalary * (1.0 + bonus);
+  newArray[2] = Math.round(baseSalary * (1.0 + bonus));
   newArray[3] = Math.round(baseSalary * bonus);
   console.log(newArray[0] + " " + newArray[1] + " " + newArray[2] + " " + newArray[3]);
   return newArray;
