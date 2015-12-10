@@ -55,7 +55,7 @@ function calculateSTI(array1){
     bonus = 0.13;
   }
   if(reviewScore == 2){
-    bonus = 0.02;
+    bonus = 0;
   } 
 
   newArray[1] = bonus;
