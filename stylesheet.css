@@ -1,0 +1,20 @@
+ul {
+	list-style: none;
+}
+
+h1 {
+	background-color: #ee88ee;
+	text-align: center;
+}
+
+.list-group-item {
+	background-color: #eeeeee;
+}
+
+li::first-letter {
+	font-size: large;
+}
+
+.heading {
+	font-size: large;
+}
